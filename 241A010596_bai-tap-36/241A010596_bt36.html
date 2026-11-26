@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini game hứng táo - Bài tập 36">
+  <title>Bài tập 36 - Mini game hứng táo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/game.js" defer></script>
+</head>
+<body class="game-page">
+  <main class="game-layout">
+    <header class="game-heading">
+      <a class="back-link" href="index.html">← Trang bài tập</a>
+      <p class="eyebrow">BÀI TẬP 36</p>
+      <h1>🍎 Mini game hứng táo</h1>
+      <p class="game-subtitle">Di chuyển giỏ để hứng táo rơi. Đừng để táo chạm đất nhé!</p>
+      <p class="student-line">Nguyễn Quốc Chung · 241A010596</p>
+    </header>
+
+    <section class="game-panel" aria-label="Khu vực trò chơi">
+      <div class="game-stats">
+        <div class="stat"><span>Điểm số</span><strong id="score">0</strong></div>
+        <div class="stat"><span>Mạng sống</span><strong id="lives">3</strong></div>
+        <div class="stat"><span>Trạng thái</span><strong id="game-status">Sẵn sàng</strong></div>
+      </div>
+
+      <div id="game-container" role="application" aria-label="Game hứng táo. Dùng phím mũi tên trái và phải để di chuyển giỏ.">
+        <div class="game-sky"></div>
+        <div id="apple" aria-label="Quả táo">🍎</div>
+        <div id="basket" aria-label="Giỏ hứng"><span>🧺</span></div>
+        <div id="game-message" class="game-message">
+          <strong>Sẵn sàng chơi?</strong>
+          <span>Nhấn “Bắt đầu” rồi dùng phím ← → để di chuyển giỏ.</span>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <button id="start-btn" class="btn btn-primary" type="button">▶ Bắt đầu</button>
+        <button id="left-btn" class="btn btn-control" type="button" aria-label="Di chuyển trái">←</button>
+        <button id="right-btn" class="btn btn-control" type="button" aria-label="Di chuyển phải">→</button>
+        <button id="restart-btn" class="btn btn-secondary" type="button">↻ Chơi lại</button>
+      </div>
+      <p class="instructions">Máy tính: dùng phím mũi tên trái/phải. Điện thoại: chạm giữ nút ← hoặc →.</p>
+    </section>
+    <footer class="game-footer">Bài tập thực hành HTML, CSS và JavaScript</footer>
+  </main>
+</body>
+</html>
